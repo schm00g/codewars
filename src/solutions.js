@@ -60,3 +60,13 @@ export function alphabetPosition(text) {
   };
   return result;
 }
+
+export function isSquare(n){
+  if(n < 0){
+    return false;
+  } else if(n === 0) {
+    return true;
+  } else {
+    return Math.sqrt(n) % 1 === 0;
+  }
+}
